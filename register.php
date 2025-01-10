@@ -50,9 +50,9 @@ include "controller/register_controller.php"; // Memanggil controller untuk memp
                 <label for="password" class="form-label">Password</label>
                 <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan Password" required>
             </div>
-            <button type="submit" name="register" class="btn btn-primary w-100">Daftar Sekarang</button>
+            <button type="submit" name="register" class="btn btn-primary w-100">Daftar-kan Administrator</button>
         </form>
-        <p class="mt-3 text-center">Sudah punya akun? <a href="login.php">Login di sini</a></p>
+        <p class="mt-3 text-center"><a href="login.php">Login </a></p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
