@@ -1,6 +1,6 @@
 <?php
-include "controller/koneksi.php";
-include "controller/register_controller.php";
+include "controller/koneksi.php"; // Pastikan koneksi database sudah benar
+include "controller/register_controller.php"; // Memanggil controller untuk memproses pendaftaran
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +14,6 @@ include "controller/register_controller.php";
     <style>
         body {
             background-color: #f8f9fa;
-
         }
 
         .register-container {
@@ -45,17 +44,15 @@ include "controller/register_controller.php";
         <form action="register.php" method="POST">
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username" name="username" placeholder="Masukkan Username"
-                    required>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Masukkan Username" required>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" name="password"
-                    placeholder="Masukkan Password" required>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan Password" required>
             </div>
             <button type="submit" name="register" class="btn btn-primary w-100">Daftar Sekarang</button>
         </form>
-
+        <p class="mt-3 text-center">Sudah punya akun? <a href="login.php">Login di sini</a></p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
