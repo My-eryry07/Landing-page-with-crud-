@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>TUGAS WEB</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -70,9 +77,10 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="/assets/2.jpg" class="d-block w-100" alt="..." style="height: 500px" />
+                <img src="/assets/2.jpg" class="d-block w-100" alt=" ..." style="height: 500px" />
                 <div class="carousel-caption">
-                    <h5>Second slide label</h5 <p>Some representative placeholder content for the second slide.</p>
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
@@ -117,12 +125,12 @@
             <!-- btn promo end -->
 
             <div class="product mb-3" style="text-align: center; padding: 20px;">
-                <div class="highlight" style="color: green; font-style: italic;">TESTING</div>
+                <div class="highlight" style="color: green; font-style: italic;">CUMA EVOS SHOES STORE</div>
                 <div class="title" style="color:aqua; font-size: 2rem; font-weight: bold;">#CUMAEVOS</div>
-                <div class="subtitle" style="color: grey; font-size: 1rem;">RRQ KAPAN PUNYA MWORD</div>
+                <div class="subtitle" style="color: grey; font-size: 1rem;">MAKE YOU GREAT </div>
             </div>
 
-            <div class="container mt-5">
+            <div class="container mt-5 ">
                 <!-- card start -->
                 <div class="row g-3 justify-content-center">
                     <?php
@@ -137,10 +145,10 @@
                                     alt="<?php echo $row['title']; ?>" style="height: 150px; object-fit: cover;" />
                                 <div class="card-body">
                                     <h5 class="card-title" style="font-size: 1rem;"><?php echo $row['title']; ?></h5>
-                                    <p class="card-text" style="font-size: 0.8rem;">
+                                    <p class="card-text" style="font-size : 0.8rem;">
                                         <?php echo $row['description']; ?>
                                     </p>
-                                    <p class="card-price" style ```html="font-size: 0.85rem;">Harga: Rp <?php echo number_format($row['price'], 0, ',', '.'); ?></p>
+                                    <p class="card-price" style="font-size: 0.85rem;">Harga: Rp <?php echo number_format($row['price'], 0, ',', '.'); ?></p>
                                     <a href="#" class="btn bg-dark text-light" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;">Beli Sekarang</a>
                                 </div>
                             </div>
